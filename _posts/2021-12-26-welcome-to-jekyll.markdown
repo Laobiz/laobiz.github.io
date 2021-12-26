@@ -1,10 +1,15 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Building a simple DNS for DynDNS resolution"
 date:   2021-12-26 11:54:08 +0100
-categories: jekyll update
+categories: tech
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+When you want to run a homelab, you do have a problem when it comes to IP resolution.
+At least in germany you do. Because your home internet connection does only get a temporary IP
+from your ISP. This can change when you restart your router or just completely random.
+
+The normal solution for this is a DynDNS service and just use the probably existing option in your router to hit an http endpoint and update some domain to point to your IP address. If it changes it will just update the IP the domain is referencing to.
+
 
 Jekyll requires blog post files to be named according to the following format:
 
